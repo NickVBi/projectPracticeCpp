@@ -45,7 +45,7 @@ SendMessage(FormMain->Handle, WM_NCLBUTTONDOWN, HTCAPTION, 0);
 //---------------------------------------------------------------------------
 void __fastcall TFormMain::ImageButtonCloseClick(TObject *Sender)
 {
-//AnimateWindow(FormMain->Handle, 200, AW_CENTER|AW_HIDE);
+// Анимация закрытия окна
 AnimateWindow(FormMain->Handle, 200, AW_VER_NEGATIVE|AW_HOR_POSITIVE|AW_HIDE);
 Close();
 }
